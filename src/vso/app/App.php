@@ -54,4 +54,19 @@ abstract class App implements InterfaceApp
     }
 
     abstract public function getProperty(string $property);
+
+    public function getLogger() : Logger
+    {
+        return $this->logger;
+    }
+
+    public function getWhooper() : Run
+    {
+        return $this->whooper;
+    }
+
+    public function getRouter() : InterfaceRouter
+    {
+        return $this->router;
+    }
 }
