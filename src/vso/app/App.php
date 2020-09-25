@@ -18,7 +18,7 @@ use \vso\http\router\InterfaceRouter;
  * bootstrap the application, througt the exposed method `initialize()`.
  *
  */
-abstract class App
+abstract class App implements InterfaceApp
 {
     protected Logger $logger;
     protected Run $whooper;
@@ -49,7 +49,9 @@ abstract class App
                 return $this->router;
                 break;
             default:
-                throw new \Exception('Property ' . $property . ' doesnt exists in ' . __CLASS__);
+                throw new \InvalidArgumentException('Property ' . $property . ' doesnt exists in ' . __CLASS__);
         }
     }
+
+    abstract public function getProperty(string $property);
 }

@@ -22,7 +22,7 @@ class EnvironmentLoaderExample implements InterfaceLoadEnvironment
     private Dotenv $dotEnv;
     private Closure $onEnvLoading;
 
-    public function __construct(string $envFilePath, string $envFileName, Closure $onEnvLoading)
+    public function __construct(string $envFilePath, string $envFileName, Closure $onEnvLoading = null)
     {
         if (empty($envFilePath)) {
             throw new \InvalidArgumentException(

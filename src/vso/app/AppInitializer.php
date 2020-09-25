@@ -17,7 +17,7 @@ class AppInitializer implements InterfaceAppInitializer
     public string $envFile;
     public InterfaceLoadEnvironment $envLoader;
 
-    public function initialize(App $application) : void
+    public function initialize(InterfaceApp $application) : void
     {
         /* Load Environment vars */
         $this->envLoader->load();
