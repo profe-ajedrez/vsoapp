@@ -14,7 +14,8 @@
         "vlucas/phpdotenv": "^5.2",
         "php": "7.4",
         "undercoder/vsoutils": "*",
-        "undercoder/vsorouter": "*"
+        "undercoder/vsorouter": "*",
+        "undercoder/mailcontainer": "*"
     },
     "description" : "Restful api skeleton",
 	"require-dev": {
