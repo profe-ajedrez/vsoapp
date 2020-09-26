@@ -23,5 +23,5 @@ interface InterfaceAppInitializer
      * @param App $application  Ref. to the app.
      * @return void
      */
-    public function initialize(App $application) : void;
+    public function initialize(InterfaceApp $application) : void;
 }
