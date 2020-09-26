@@ -17,7 +17,7 @@ interface InterfaceApp
      *
      * Implementing classes should use this method stub to expose
      * needed properties to parent class
-     * 
+     *
      * @param string $property
      * @return mixed
      */

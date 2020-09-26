@@ -25,7 +25,7 @@ abstract class App implements InterfaceApp
     protected InterfaceRouter $router;
 
 
-    public function __construct(AppInitializer $initializer)
+    public function __construct(InterfaceAppInitializer $initializer)
     {
         if (is_null($initializer)) {
             throw new \InvalidArgumentException(
